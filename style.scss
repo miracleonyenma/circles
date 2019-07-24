@@ -10,18 +10,26 @@ $light: #bddfef;
 }
 
 .cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .main{
   width: 200px;
   height: 200px;
   position: relative;
-  background: $blue;
+  background: transparent;
 
-  
+    .circle{
+      border-radius: 50%;
+    }
+
+    .big{
+      width: 160px;
+      height: 160px;
+      background: $blue;
+    }
 }
