@@ -1,0 +1,27 @@
+
+$blue: #209ad3;
+$light: #bddfef;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito';
+    transition: 0.52s cubic-bezier(.76,.08,.26,1.34);
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background: $blue;
+
+  
+}
