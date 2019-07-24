@@ -1,6 +1,7 @@
 
 $blue: #209ad3;
 $light: #bddfef;
+$raspberry: #ff007d;
 *{
   box-sizing: border-box;
   padding: 0;
@@ -31,5 +32,42 @@ $light: #bddfef;
       width: 160px;
       height: 160px;
       background: $blue;
+      z-index: 2;
     }
+
+    .small{
+      width: 60px;
+      height: 60px;
+      background: $light;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: revolve 3s linear infinite;
+      transform: translate(0%, 0%);
+    }
+}
+
+@keyframes revolve{
+  0%{
+    transform: translate(-50%, -50%);
+  }
+  // 25%{
+  //   transform: translate(250%, 200%);
+  // }
+  50%{
+    transform: translate(250%, 250%); 
+  }
+  // 75%{
+  //   transform: translate(250%, 200%);
+
+  // }
+  // 100%{
+  //   transform: translate(-50%, -50%);
+  // }
+  100%{
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transform: scale(0.8);
+  }
+
 }
