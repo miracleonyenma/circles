@@ -1,2 +1,5 @@
 # Circles | CSS
-...revolving circles
+> ...revolving circles
+
+### No need for configurations
+
