@@ -31,6 +31,8 @@ body {
   height: 260px;
   position: relative;
   background: transparent;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .main .circle {

@@ -27,6 +27,7 @@ body{
   height: 260px;
   position: relative;
   background: transparent;
+  touch-action: none;
 
     .circle{
       border-radius: 50%;
