@@ -44,7 +44,7 @@ body {
 .main .big {
   width: 160px;
   height: 160px;
-  background-image: radial-gradient(circle at top right, #209ad3, #197aa7 70%, #13597a 100%);
+  background-image: radial-gradient(circle at top right, #209ad3, #195fa7 70%, #13297a 100%);
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -57,7 +57,7 @@ body {
   content: "";
   width: 160px;
   height: 160px;
-  background-image: radial-gradient(circle at top right, #209ad3, #197aa7 70%, #13597a 100%);
+  background-image: radial-gradient(circle at top right, #209ad3, #195fa7 70%, #13297a 100%);
   position: absolute;
   overflow: hidden;
   top: 50%;
