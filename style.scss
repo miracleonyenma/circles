@@ -28,6 +28,7 @@ body{
   position: relative;
   background: transparent;
   touch-action: none;
+  transition: 0.2s ease;
 
     .circle{
       border-radius: 50%;
@@ -36,18 +37,25 @@ body{
     .big{
       width: 160px;
       height: 160px;
-      background: $blue;
+      background-image: radial-gradient(circle at top right,
+                                          $blue,
+                                          darken($blue, 20%) 70%, 
+                                          darken($blue, 30%) 100%);
       position: absolute;
       overflow: hidden;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) ;
+      
 
       &::before{
         content: "";
         width: 160px;
         height: 160px;
-        background: $blue;
+        background-image: radial-gradient(circle at top right,
+                                            $blue,
+                                            darken($blue, 20%) 70%, 
+                                            darken($blue, 30%) 100%);
         position: absolute;
         overflow: hidden;
         top: 50%;

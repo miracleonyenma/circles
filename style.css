@@ -33,6 +33,8 @@ body {
   background: transparent;
   -ms-touch-action: none;
       touch-action: none;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .main .circle {
@@ -42,7 +44,7 @@ body {
 .main .big {
   width: 160px;
   height: 160px;
-  background: #209ad3;
+  background-image: radial-gradient(circle at top right, #209ad3, #13597a 70%, #0c394e 100%);
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -55,7 +57,7 @@ body {
   content: "";
   width: 160px;
   height: 160px;
-  background: #209ad3;
+  background-image: radial-gradient(circle at top right, #209ad3, #13597a 70%, #0c394e 100%);
   position: absolute;
   overflow: hidden;
   top: 50%;
