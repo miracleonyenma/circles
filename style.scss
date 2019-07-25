@@ -23,8 +23,8 @@ body{
 }
 
 .main{
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
   position: relative;
   background: transparent;
 
@@ -36,6 +36,38 @@ body{
       width: 160px;
       height: 160px;
       background: $blue;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) ;
+
+      &::before{
+        content: "";
+        width: 160px;
+        height: 160px;
+        background: $blue;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) ;
+        z-index: 1;  
+      }
+
+      &:after{
+        content: "";
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $dark;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: revolve 9s cubic-bezier(0.77, 0.46, 1, 0.26) infinite;
+        transform: translate(0, 0) scale(0.6);  
+      }
     }
 
     .small{
@@ -45,14 +77,18 @@ body{
       position: absolute;
       top: 0;
       left: 0;
-      animation: revolve 6s linear infinite;
-      transform: translate(0%, 0%);
+      animation: revolve 9s linear infinite;
+      transform: translate(0, 0) scale(0.6);
     }
 }
 
 @keyframes revolve{
   0%{
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(0, 0)  scale(0.6);
+    z-index: 1;
+  }
+  1%{
+    transform: translate(0, 0)  scale(1);
     z-index: 1;
   }
 
@@ -60,33 +96,43 @@ body{
     z-index: 1;
   }
   25%{
-    transform: translate(250%, 250%) scale(1);
+    transform: translate(200px, 200px) scale(1);
     z-index: -1;
   }
   26%{
-    transform: translate(250%, 250%) scale(0.6);
+    transform: translate(200px, 200px) scale(0.6);
   }
 
   49%{
     z-index: -1;
+    transform: translate(0, 0) scale(0.6);
   }
   50%{
-    transform: translate(-50%, -50%) scale(1); 
+    transform: translate(0, 0)  scale(1); 
     z-index: 1;  
+  }
+  51%{
+    transform: translate(0, 0)  scale(1); 
   }
 
   74%{
     z-index: 1;
   }
   75%{
-    transform: translate(250%, 250%) scale(0.6);
+    transform: translate(200px, 200px) scale(1);
     z-index: -1;
   }
+  76%{
+    transform: translate(200px, 200px) scale(0.6);
+  }
+
   99%{
     z-index: -1;
   }
   100%{
-    transform: translate(-50%, -50%);
+    transform: translate(0, 0) scale(0.6) ;
     z-index: 1;
   }
 }
+
+
