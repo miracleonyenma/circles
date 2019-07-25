@@ -37,7 +37,7 @@ body{
     .big{
       width: 160px;
       height: 160px;
-      background-image: radial-gradient(circle at top right,
+      background-image: radial-gradient(circle at top left,
                                           $blue,
                                           #195fa7 70%, 
                                           #13297a 100%);
@@ -52,7 +52,7 @@ body{
         content: "";
         width: 160px;
         height: 160px;
-        background-image: radial-gradient(circle at top right,
+        background-image: radial-gradient(circle at top left,
                                             $blue,
                                             #195fa7 70%, 
                                             #13297a 100%);
