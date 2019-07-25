@@ -11,3 +11,13 @@ centerX = revolveBox.left + parseInt(centers[0]) - window.pageXOffset;
 // centerX = revolveBox.left + revolveBox.width/2 - window.pageXOffset,
 // centerY = revolveBox.top + revolveBox.height/2 - window.pageYOffset;
 
+//add event listener for the mouse
+window.addEventListener("mousemove", function(e){
+
+    //Inside this function, we do some trigonometry to determine the angle of the mouse, relative to the origin-center of the element:
+    var radians = Math.atan2(e.clientX - centerX, e.clientY - centerY);
+    // this.console.log(radians);
+    var degree = (radians * (180 / Math.PI) * -1) + 180;
+    this.console.log(degree);
+    container.style.transform = "rotate(" + degree + "deg)";
+});
